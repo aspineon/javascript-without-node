@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <body>    	
+    	<!-- tag::declarations[] -->
+        <script type="text/typescript">
+            module Sayings {
+                export class Greeter {
+                    greeting: string;
+                    constructor (message: string) {
+                        this.greeting = message;
+                    }
+                    greet() {
+                        return "Hello, " + this.greeting;
+                    }
+                }
+            }
+        </script>
+        <!-- end::declarations[] -->
+
+        <!-- You can add multiple TypeScript blocks: -->
+        <!-- tag::logic[] -->
+        <script type="text/typescript">
+            var greeter = new Sayings.Greeter('world');
+            var button = document.createElement('button')
+            button.innerHTML = "Say hello"
+            button.onclick = function() {
+                    alert(greeter.greet())
+            }
+            document.body.appendChild(button)
+        </script>
+        <!-- end::logic[] -->
+
+        <!-- tag::includes[] -->
+        <script 
+            src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js">
+        </script>
+        <script 
+            src="https://rawgit.com/basarat/typescript-script/master/transpiler.js">
+        </script>
+        <!-- end::includes[] -->
+    </body>
+</html>
+

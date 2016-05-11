@@ -1,1 +1,128 @@
-// why typescript
+== What about the JS itself?
+
+=== !
+
+[%step]
+.As we embrace in JavaScript
+* No typing
+* No modules
+* Verbose patterns _(or call them workarounds)_
+
+=== The TypeScript's promise
+
+* A superset of JavaScript
+* Optionally typed (with modules, namespaces)
+* Compiles to ECMAScript3 (backwards compatibility)
+* No special runtime
+* Aligned with ES6 features
+
+=== !
+
+[quote, Douglas Crockford, https://plus.google.com/u/0/+DouglasCrockfordEsq/posts/MgzNUSTwjRt]
+Microsoft's TypeScript *may be the best of the many JavaScript front ends*. It seems to generate the most attractive code. And I think it should take pressure off of the ECMAScript Standard for new features like type declarations and classes. Anders has shown that these can be provided nicely by a preprocessor, so there is no need to change the underlying language.
+
+=== !
+
+[quote, Douglas Crockford, https://plus.google.com/u/0/+DouglasCrockfordEsq/posts/MgzNUSTwjRt]
+I think that *JavaScript's loose typing is one of its best features and that type checking is way overrated*. TypeScript adds sweetness, but at a price. It is not a price I am willing to pay.﻿
+
+=== A Step back
+
+*Weak / dynamic languages*
+
+.http://nurkiewicz.github.io/talks/2015/haskell/
+image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
+
+=== Some examples
+
+link:http://www.typescriptlang.org/play/index.html[]
+
+[NOTE.speaker]
+--
+----
+interface Observer {
+	update(message: String);
+}
+
+interface Observable {
+	addObserver(observer: Observer);
+	notify();
+}
+
+class Monitor implements Observer {
+	update(message) {
+		console.log(message);
+	}
+}
+
+class Greeter implements Observable {
+	name: String;
+	observers: Array<Observer> = []
+	constructor(name: String) {
+		this.name = name;
+	}
+
+	addObserver(o: Observer) {
+		this.observers.push(o);
+	}
+
+	private updateObserver(o: Observer) {
+		o.update(`Greeter message from ${this.name}`)
+	}
+
+	notify() {
+		this.observers.forEach((o) => this.updateObserver(o))
+	}
+
+	sayHello() {
+		this.notify();
+		let p = document.createElement("p")
+		p.innerHTML = `Hello ${this.name}`
+		document.body.appendChild(p);
+	}
+}
+
+let monitor = new Monitor()
+let greeter = new Greeter("Jakub")
+greeter.addObserver(monitor)
+
+greeter.sayHello()
+----
+--
+
+=== So why TypeScript
+
+[%step]
+* Scalable HTML5 client-side development
+* Modular development
+* Easily learnable for Java developers
+* Non-invasive (existing libs, browser support)
+* Long-term vision
+* Clean JS output (exit strategy)
+
+=== Build tools not required
+
+[source, html]
+----
+include::{snippets}/typescript-greeter/index.html[indent=0, tags=includes]
+----
+
+=== Run it in a browser
+
+[source, html]
+----
+include::{snippets}/typescript-greeter/index.html[indent=0, tags=declarations]
+----
+
+=== Run it in a browser
+
+[source, html]
+----
+include::{snippets}/typescript-greeter/index.html[indent=0, tags=logic]
+----
+
+[NOTE.speaker]
+--
+* As JavaScript is a first class citizen in typescript - you can easily use document, window
+** On the top of TypeScript code
+--

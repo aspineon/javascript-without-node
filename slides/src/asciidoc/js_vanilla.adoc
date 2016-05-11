@@ -1,6 +1,33 @@
 == Like Java but different
 
-.Things to watch out
+=== Weak / dynamic languages
+
+.http://nurkiewicz.github.io/talks/2015/haskell/
+image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
+
+[NOTE.speaker]
+--
+* Why do we want to move across this diagram, from static types prisn to dynamic typing hell?
+* This is important - this will bite us in the us soon
+** We should remember about this - we are shifting the paradigm
+--
+
+=== Duck typing
+
+[quote, Wikipedia]
+(...) *duck typing* is a style of dynamic typing in which an object's *current* set of *methods and properties determines the valid semantics*, rather than its inheritance from a particular class or implementation of a specific interface.
+
+=== In other words
+
+[quote, Michael Youssef]
+If it walks like a duck and it quacks like a duck, then it is a duck.
+
+[%notitle]
+=== I have an image for that
+
+image::duck_typing.jpg[height=550]
+
+=== Things to watch out
 * `use strict`
 * `var that = this`
 * operator `new`
@@ -9,8 +36,10 @@
 [NOTE.speaker]
 --
 * This generally looks like Java
+* Duck typing isn't among the most dangerous
 * A few things differ much - let's walk through them
 --
+
 
 === `use strict`
 

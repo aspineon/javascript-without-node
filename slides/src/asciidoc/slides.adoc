@@ -6,7 +6,7 @@ Jakub Marchwicki <http://github.com/kubamarchwicki[@kubem]>
 :icons: font
 :imagesdir: images
 :figure-caption!:
-:revealjsdir: /home/kubam/workspaces/asciidoctor/reveal.js
+//:revealjsdir: /home/kubam/workspaces/asciidoctor/reveal.js
 :revealjs_center: false
 :revealjs_theme: poang
 :revealjs_transition: fade
@@ -55,18 +55,6 @@ image::atwood-law.jpg[width=100%]
 [#aboutme, data-background-image=images/chlopaki.jpg, data-background-size=cover]
 == Who am I?
 image::chlopaki.jpg[height=580]
-
-== Weak / dynamic languages
-
-.http://nurkiewicz.github.io/talks/2015/haskell/
-image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
-
-[NOTE.speaker]
---
-* Why do we want to move across this diagram, from static types prisn to dynamic typing hell?
-* This is important - this will bite us in the us soon
-** We should remember about this - we are shifting the paradigm
---
 
 == TODOMVC Examples
 
@@ -127,8 +115,19 @@ include::js_polyfill.adoc[]
 
 *Because it is an opinionated talk*
 
+== Why should be even bother?
 
-== Puenta
+[%step]
+* The is not such thing as full-stack developer
+* It's a *unicorn*
+* But there is a full-stack architect
+* A person who feel appropriately comfortable in both sides
+* Be a *full-stack architect*
+
+[NOTE.speaker]
+--
+* We feel so comfortable in out backend comfort zone
+--
 
 == Questions?
 

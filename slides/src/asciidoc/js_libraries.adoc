@@ -1,5 +1,11 @@
 == But before we start...
 
+[NOTE.speaker]
+--
+* We look for a perfect tool, read up - research
+* Get slapped by the environment
+--
+
 [%notitle, data-background-image=images/angular2.png, data-background-size=cover]
 === AngularJS
 
@@ -66,6 +72,13 @@ We don't want it to be like this
 
 [source, html]
 ----
-include::{snippets}/react-hello-world/index.html[tags=rootelement;scripts]
+include::{snippets}/react-hello-world/index.html[indent=0, tags=rootelement;scripts]
 ----
 
+[NOTE.speaker]
+--
+* And in fact for most libraries you can do this
+* You just need a modern browser (ES5) and start coding
+* This is obviously not your production setup (nor effective development env)
+** But we not there yet
+--

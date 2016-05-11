@@ -1,3 +1,112 @@
-// different languages coffee, scala js
+== Any alternatives
 
-//Call it shims if you want to keep the directory generic. A polyfill is a type of shim that retrofits legacy browsers with modern HTML5/CSS3 features usually using Javascript or Flash. A shim, on the other hand, refers to any piece of code that performs interception of an API call and provides a layer of abstraction. It isn't necessarily restricted to a web application or HTML5/CSS3.
+[%step]
+* CoffeeScript
+* ECMAScript6 (ES2015) - with babel
+* ScalaJS
+* Kotlin
+* clojurescript
+
+=== Shims and polyfill
+
+Polyfill:: retrofits legacy browsers with modern HTML5/CSS3 features
+Shims:: performs interception of an API call and provides a layer of abstraction
+
+=== Babel
+
+[quote]
+Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.
+
+[NOTE.speaker]
+--
+* For the basics - we still write JavaScript (more modern) and get JavaScript (less modern) - backwards compatible
+* That wasn't out case for the strong to weak typing journey
+* And the output is not as beautiful as in typescript
+--
+
+=== ScalaJS
+
+
+[source, scala]
+----
+object ScalaJSExample extends js.JSApp {
+
+  def main() = {
+    var x = 0
+    while(x < 10) {
+      println(x)
+      x += 3
+    }
+    println(s"Final: $x")
+
+  }
+}
+----
+
+=== ScalaJS - transpiled
+
+[source, ruby]
+----
+ScalaJS.c.LMain$.prototype.main__V = (function() {
+  var x = 0;
+  while ((x < 10)) {
+      ScalaJS.m.s_Predef$()
+           .println__O__V(x)
+    x = ((x + 3) | 0)
+  };
+  ScalaJS.m.s_Predef$()
+           .println__O__V("Final: " + x)
+});
+----
+
+=== TypeScript
+
+
+[source, javascript]
+----
+class Main {
+    hello() {
+        var x = 0;
+        while (x < 10) {
+            console.log(x)
+            x += 3
+        }
+
+        console.log(`Final: ${x}`)
+    }
+}
+
+var main = new Main()
+main.hello()
+----
+
+=== TypeScript - transpiled
+
+
+[source, javascript]
+----
+var Main = (function () {
+    function Main() {
+    }
+    Main.prototype.hello = function () {
+        var x = 0;
+        while (x < 10) {
+            console.log(x);
+            x += 3;
+        }
+        console.log("Final: " + x);
+    };
+    return Main;
+})();
+
+var main = new Main();
+main.hello();
+----
+
+=== Treat it as a good convention
+
+[%step]
+* Always look on the output of the transpiler
+* Learn how proper JavaScript may look like
+* Remove TypeScript and just JavaScript
+* Without the Bad Parts
