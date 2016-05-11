@@ -1,0 +1,134 @@
+= Learning JavaScript without node.js
+Jakub Marchwicki <http://github.com/kubamarchwicki[@kubem]>
+:idprefix: slide_
+:title-slide-background-image: cover-commicstrip_full_stack.jpg
+:title-slide-background-size: cover
+:icons: font
+:imagesdir: images
+:figure-caption!:
+:revealjsdir: /home/kubam/workspaces/asciidoctor/reveal.js
+:revealjs_center: false
+:revealjs_theme: poang
+:revealjs_transition: fade
+:revealjs_progress: false
+:revealjs_history: true
+:revealjs_controls: false
+:revealjs_customtheme: css/poang.css
+:revealjs_width: 1280
+:revealjs_height: 720
+:source-highlighter: coderay
+:snippets: ../snippets
+
+[#disclaimer]
+== Disclaimer
+
+This is a bit JavaScript 101
+[.small]#You've been warned#
+
+[NOTE.speaker]
+--
+* This is JS 101
+* If you've done anythign with JS - a SPA - you probably know more than I do
+** You can leave - I'm fine
+--
+
+include::js_brief_history.adoc[]
+
+include::js_wat.adoc[]
+
+[%notitle, data-background-image=images/js_good_parts.jpg, data-background-size=cover]
+== Good parts
+
+[%notitle]
+== Atwood Law
+
+.http://blog.codinghorror.com/the-principle-of-least-power/
+image::atwood-law.jpg[width=100%]
+
+
+== Content
+
+* JavaScript Basics & Gotchas
+* Modern framework bullsh*t bingo game
+* Fighting language inconsistencies
+
+[#aboutme, data-background-image=images/chlopaki.jpg, data-background-size=cover]
+== Who am I?
+image::chlopaki.jpg[height=580]
+
+== Weak / dynamic languages
+
+.http://nurkiewicz.github.io/talks/2015/haskell/
+image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
+
+[NOTE.speaker]
+--
+* Why do we want to move across this diagram, from static types prisn to dynamic typing hell?
+* This is important - this will bite us in the us soon
+** We should remember about this - we are shifting the paradigm
+--
+
+== TODOMVC Examples
+
+.https://github.com/tastejs/todomvc/
+image::todo-screenshot.png[]
+
+include::js_vanilla.adoc[]
+
+== No need to write Vanilla JS
+
+image::js-alternatives-wordcloud.png[height=550]
+
+[NOTE.speaker]
+--
+GWT, CoffeeScript, Dart, ES5, ES6
+--
+
+== Not only DOM functions
+
+[cols="2",opts="autowidth"]
+|===
+a| DOM manipulation::
+* jQuery
+* Prototype
+* React.js
+* YUI Library
+
+a| MVC (MVVM)::
+* AngularJS
+* Backbone.js
+* Chaplin.js
+* Ember.js
+* Knockout
+* Meteor
+* React.js
+|===
+
+[data-background-image=images/choice-paradox.jpg, data-background-size=cover, data-background=#fff]
+== The Paradox of Choice
+
+[NOTE.speaker]
+--
+You make the intelectual exercise of finding the best technology and than... you got *slapped* in the face with the build tool
+--
+
+include::js_libraries.adoc[]
+
+include::typescript.adoc[]
+
+include::js_polyfill.adoc[]
+
+== ... we used
+
+* Browser
+* `<script />` tag
+* React.js
+* Typescript
+
+*Because it is an opinionated talk*
+
+
+== Puenta
+
+== Questions?
+

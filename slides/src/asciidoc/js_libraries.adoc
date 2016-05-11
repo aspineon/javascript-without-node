@@ -1,0 +1,71 @@
+== But before we start...
+
+[%notitle, data-background-image=images/angular2.png, data-background-size=cover]
+=== AngularJS
+
+[%notitle, data-background-image=images/react.png, data-background-size=cover]
+=== React
+
+[%notitle, data-background-image=images/underscore.png, data-background-size=cover]
+=== Underscore
+
+[%notitle, data-background-image=images/typescript.png, data-background-size=cover]
+=== Typescript
+
+=== So the build tools...
+
+.https://twitter.com/joewalnes/status/727280111511195648
+image::tweet-wales-build.png[]
+
+[NOTE.speaker]
+--
+No - I will not get into details of JavaScript build tools
+* npm, grunt, gulp, jspm, bower, webpack etc
+* It doesn't mean they are bad - they are quite useful
+** When you know them
+--
+
+=== ... as complexity sells better
+
+.https://twitter.com/denormalize/status/679399609991430148/
+image::https://pbs.twimg.com/media/CW22WFeWwAEkpUu.png:large[]
+
+=== ... we won't use them
+
+.https://twitter.com/joewalnes/status/727280857476538368
+image::tweet-wales-nowebpack.png[]
+
+=== Learning process
+
+* We should expect tool to be working straightforwardly
+* We don't need all this hot reloading, file watching, ES2015 at the beginning
+* Start with writing The Application
+** Add in the developer functionality when felt more comfortable in the environment
+
+*Learn just one thing at a time*
+
+[NOTE.speaker]
+--
+* I can get SpringBoot, ElasticSearch work out of the box with sensible defaults
+** Why do I need to spend a week to configure my webapplication framework
+* Setting up this extra stuff doesn't bring any value, is infrastructure
+** Doesn't bring you closer to your goal
+** But developers love infrastructure
+--
+
+=== Learning curve
+
+image::angular-learning-curve.png[]
+
+[NOTE.speaker]
+--
+We don't want it to be like this
+--
+
+=== We want it to be simple
+
+[source, html]
+----
+include::{snippets}/react-hello-world/index.html[tags=rootelement;scripts]
+----
+

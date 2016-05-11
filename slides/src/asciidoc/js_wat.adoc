@@ -1,0 +1,35 @@
+== Not what we want to learn
+
+.http://twitter.com/natpryce/status/557553705109950464
+image::http://nurkiewicz.github.io/talks/2015/haskell/img/twitter-string-type.png[height=500]
+
+[NOTE.speaker]
+--
+* double-precision 64-bit binary format IEE 754 value (aka floating point)
+* Boolean
+* if I were to distill one thing JavaScript is famous for it would be WAT?
+--
+
+[%notitle, data-background-image=images/Wat.jpg, data-background-size=cover]
+=== WAT?
+
+[NOTE.speaker]
+--
+* 3 > 2 > 1
+* true == 1
+** true !== 1
+* ["10", "10", "10", "10"].map(parseInt)
+** ["10", "10", "10", "10"].map(parseFloat)
+** ["10", "10", "10", "10"].map(function(i) {return +i})
+** http://stackoverflow.com/a/262511/330070
+* var foo = function(name) { this.greeting = "Hello " + name + "!" }
+--
+
+[%notitle, data-background-image=images/Wat2.jpg, data-background-size=cover]
+=== WAT? (2)
+
+[NOTE.speaker]
+--
+* So why on earth are we willing to learn this language
+--
+

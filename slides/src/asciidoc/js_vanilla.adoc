@@ -1,0 +1,164 @@
+== Like Java but different
+
+.Things to watch out
+* `use strict`
+* `var that = this`
+* operator `new`
+* Module pattern
+
+[NOTE.speaker]
+--
+* This generally looks like Java
+* A few things differ much - let's walk through them
+--
+
+=== `use strict`
+
+[quote, John Resig, http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/]
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
+
+[NOTE.speaker]
+--
+* That cannot be understood without ECMAScript history
+--
+
+=== What is ECMAScript?
+
+ECMAScript:: standardized specification of JavaScript
+ECMAScript 5:: _(2009)_ - to clarify ambiguities of all previous implementations
+* Especially ECMAScript 3
+* ECMAScript 4 was abandoned - politics
+ECMAScript 6:: _(2015 - aka ECMAScript 2015)_ - since last year
+
+[NOTE.speaker]
+--
+* dont' want to go too deep into the rabbit hole
+* ECMAScript 6 - we will cover different flavours later on
+--
+
+=== `var that = this`
+
+.`this` in JavaScript
+* function's `this` keyword behaves a little differently in JavaScript compared to other languages.
+* it also has some differences between `strict` mode and `non-strict` mode.
+* the value of `this` is determined by how a function is called.
+* it may be different each time the function is called.
+
+[NOTE.speaker]
+--
+You remember WAT image - now it fits
+--
+
+=== `var that = this`
+
+[source, javascript]
+----
+var colours = ['red', 'green', 'blue'];
+document.getElementById('element').addEventListener('click', function() {
+    // this is a reference to the element clicked on
+
+    var that = this;
+
+    colours.forEach(function() {
+        // this is undefined (attached to global)
+        // that is a reference to the element clicked on
+    });
+});
+----
+
+=== `var that = this`
+
+[quote, Douglas Crockford, http://www.crockford.com/javascript/private.html]
+By convention, we make a private *that* variable. This is used to make the object available to the private methods. This is a workaround for an error in the ECMAScript Language Specification which causes *this* to be set incorrectly for inner functions.
+
+=== Operator `new`
+
+* Functions in JavaScripts are objects
+* `new` operator creates new object that inherits from Operand's prototype member
+** If `new` is forgotten - it's an ordinary function call
+** Meaning `this` refers to global `windows` not local function scope
+
+[source, txt]
+----
+jjs> var test = function() { print(this) }
+jjs> test()
+[object global]
+jjs> new test()
+[object Object]
+----
+
+=== Operator `new`
+
+* By convention - functions intended to be used with `new` should be given names with capital letters
+* Convention gives visual clue that can spot some expensive mistakes
+
+*But it's even better not to use `new` at all*
+
+=== Module pattern
+
+[source, javascript]
+.declares a function, which then calls itself immediately
+----
+var Module = (function () {
+  // code
+})();
+----
+
+* Think about is as Spring singleton beans
+
+=== Private vs. Public
+
+
+[source, javascript]
+----
+var Module = (function () {
+  var _privateMethod = function () { // private
+  };
+
+  var someMethod = function () { // public
+  };
+
+  var anotherMethod = function () { // public
+  };
+
+  return {
+    someMethod: someMethod,
+    anotherMethod: anotherMethod
+  };
+})();
+----
+
+=== Inheritance vs. composition
+
+[source, javascript]
+----
+var EnhancedModule = (function (Module) {
+
+    // access to `Module`
+
+})(Module);
+----
+
+=== What is the problem here?
+
+* Stay close to 'bare metal'
+* Play with simple tools (not over-abstract)
+* Get *slapped* with all inconsistencies
+** The way here is the Crockford way - not the only way
+
+[NOTE.speaker]
+--
+* like I personally like JSPs :)
+* What are alternatives, cause JS is
+** inconsistent
+** Crippled
+** Just bad
+--
+
+=== !
+
+[quote, David Foster Wallace, http://bulletin.kenyon.edu/x4280.html]
+There are these two young fish swimming along, and they happen to meet an older fish swimming the other way, who nods at them and says, "Morning, boys, how's the water?" And the two young fish swim on for a bit, and then eventually one of them looks over at the other and goes, "What the hell is water?"
+
+[data-background-image=images/futurama-fry-money-wallpaper-1.jpg, data-background-size=cover, data-background=#fff]
+=== OMG! We are doomed!

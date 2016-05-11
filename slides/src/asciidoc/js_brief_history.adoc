@@ -1,0 +1,46 @@
+== 1995 - the year JS born
+
+[NOTE.speaker]
+--
+* We will be talking about JavaScript
+--
+
+=== 1995 - the year JS born
+
+*In 10 days*
+
+[NOTE.speaker]
+--
+* A language written in 1995
+* In *10 days*
+** 10 days - not much. We will get back to this later
+* By Brendan Eich (*Brendan Aik*)
+--
+
+[%notitle, data-background-image=images/nokia.jpg, data-background-size=cover]
+=== Nokia phone
+
+[%notitle, data-background-image=images/windows_95_by_clutch.jpg, data-background-size=contain]
+=== Windows 95
+
+[%notitle, data-background-image=images/win_311.png, data-background-size=contain]
+=== Windows 3.11
+
+[%notitle, data-background-image=images/windows_95_netscape.jpg, data-background-size=contain]
+=== Netscape Navigator
+
+[%notitle, data-background-image=images/web1995.jpg, data-background-size=contain]
+=== 1995 website
+
+=== The state of an art JavaScript
+
+[source, javascript]
+.As of 1995
+----
+include::{snippets}/date.js[]
+----
+
+=== In one sentence
+
+[quote, Adrian Kosmaczewski, https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c]
+JavaScript on the client side, sprinkled with lots of “if this is Netscape do this, else do that” because back then noone had any idea how to use JavaScript properly.
