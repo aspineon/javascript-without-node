@@ -1,10 +1,10 @@
 == But before we start...
 
 [NOTE.speaker]
---
+====
 * We look for a perfect tool, read up - research
 * Get slapped by the environment
---
+====
 
 [%notitle, data-background-image=images/angular2.png, data-background-size=cover]
 === AngularJS
@@ -24,12 +24,12 @@
 image::tweet-wales-build.png[]
 
 [NOTE.speaker]
---
+====
 No - I will not get into details of JavaScript build tools
 * npm, grunt, gulp, jspm, bower, webpack etc
 * It doesn't mean they are bad - they are quite useful
 ** When you know them
---
+====
 
 === ... as complexity sells better
 
@@ -51,22 +51,22 @@ image::tweet-wales-nowebpack.png[]
 *Learn just one thing at a time*
 
 [NOTE.speaker]
---
+====
 * I can get SpringBoot, ElasticSearch work out of the box with sensible defaults
 ** Why do I need to spend a week to configure my webapplication framework
 * Setting up this extra stuff doesn't bring any value, is infrastructure
 ** Doesn't bring you closer to your goal
 ** But developers love infrastructure
---
+====
 
 === Learning curve
 
 image::angular-learning-curve.png[]
 
 [NOTE.speaker]
---
+====
 We don't want it to be like this
---
+====
 
 === We want it to be simple
 
@@ -76,9 +76,9 @@ include::{snippets}/react-hello-world/index.html[indent=0, tags=rootelement;scri
 ----
 
 [NOTE.speaker]
---
+====
 * And in fact for most libraries you can do this
 * You just need a modern browser (ES5) and start coding
 * This is obviously not your production setup (nor effective development env)
 ** But we not there yet
---
+====

@@ -1,21 +1,21 @@
 == 1995 - the year JS born
 
 [NOTE.speaker]
---
+====
 * We will be talking about JavaScript
---
+====
 
 === 1995 - the year JS born
 
 *In 10 days*
 
 [NOTE.speaker]
---
+====
 * A language written in 1995
 * In *10 days*
 ** 10 days - not much. We will get back to this later
 * By Brendan Eich (*Brendan Aik*)
---
+====
 
 [%notitle, data-background-image=images/nokia.jpg, data-background-size=cover]
 === Nokia phone

@@ -19,7 +19,24 @@
 #links pre,
 #aboutme pre {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-} 
+}
+
+#aboutme div.exampleblock {
+  text-align: left;
+  font-family: monospace;
+  background-color: #E5E4E4;
+  margin-left: -400px;
+}
+
+#aboutme a {
+  color: #5C8C93;
+}
+
+#aboutme div.right {
+  clear: right;
+  float: right;
+  margin-right: 100px;
+}
 
 #disclaimer .paragraph {
   margin-top: 50px;
@@ -29,7 +46,7 @@
 
 #disclaimer span.small {
   font-size: 0.5em;
-  font-weight: normal;  
+  font-weight: normal;
 }
 
 /* Generic styles */
@@ -75,7 +92,7 @@ body {
 
 /* voxxed days slides variation */
 .reveal h1 {
-  margin: 0px 0px 0px 300px;
+  margin: 0px 0px 0px 400px;
   color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -561,7 +578,7 @@ section.topic {
 footer {
     position: fixed;
     bottom: 1%;
-    right: 15%;    
+    right: 15%;
 }
 
 footer span {
@@ -638,4 +655,8 @@ b.conum * {
 
 .attribution cite {
   font-size: 0.6em;
+}
+
+.slide-menu-button {
+  display: none;
 }

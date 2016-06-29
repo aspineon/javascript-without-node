@@ -38,7 +38,7 @@ image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
 link:http://www.typescriptlang.org/play/index.html[]
 
 [NOTE.speaker]
---
+====
 ----
 interface Observer {
 	update(message: String);
@@ -88,7 +88,7 @@ greeter.addObserver(monitor)
 
 greeter.sayHello()
 ----
---
+====
 
 === So why TypeScript
 
@@ -122,7 +122,7 @@ include::{snippets}/typescript-greeter/index.html[indent=0, tags=logic]
 ----
 
 [NOTE.speaker]
---
+====
 * As JavaScript is a first class citizen in typescript - you can easily use document, window
 ** On the top of TypeScript code
---
+====

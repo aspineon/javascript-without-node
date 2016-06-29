@@ -6,11 +6,13 @@
 image::http://nurkiewicz.github.io/talks/2015/haskell/img/type-systems.png[]
 
 [NOTE.speaker]
---
+====
 * Why do we want to move across this diagram, from static types prisn to dynamic typing hell?
 * This is important - this will bite us in the us soon
 ** We should remember about this - we are shifting the paradigm
---
+====
+
+
 
 === Duck typing
 
@@ -34,11 +36,11 @@ image::duck_typing.jpg[height=550]
 * Module pattern
 
 [NOTE.speaker]
---
+====
 * This generally looks like Java
 * Duck typing isn't among the most dangerous
 * A few things differ much - let's walk through them
---
+====
 
 
 === `use strict`
@@ -47,9 +49,9 @@ image::duck_typing.jpg[height=550]
 Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
 
 [NOTE.speaker]
---
+====
 * That cannot be understood without ECMAScript history
---
+====
 
 === What is ECMAScript?
 
@@ -60,10 +62,10 @@ ECMAScript 5:: _(2009)_ - to clarify ambiguities of all previous implementations
 ECMAScript 6:: _(2015 - aka ECMAScript 2015)_ - since last year
 
 [NOTE.speaker]
---
+====
 * dont' want to go too deep into the rabbit hole
 * ECMAScript 6 - we will cover different flavours later on
---
+====
 
 === `var that = this`
 
@@ -74,9 +76,9 @@ ECMAScript 6:: _(2015 - aka ECMAScript 2015)_ - since last year
 * it may be different each time the function is called.
 
 [NOTE.speaker]
---
+====
 You remember WAT image - now it fits
---
+====
 
 === `var that = this`
 
@@ -176,13 +178,13 @@ var EnhancedModule = (function (Module) {
 ** The way here is the Crockford way - not the only way
 
 [NOTE.speaker]
---
+====
 * like I personally like JSPs :)
 * What are alternatives, cause JS is
 ** inconsistent
 ** Crippled
 ** Just bad
---
+====
 
 === !
 

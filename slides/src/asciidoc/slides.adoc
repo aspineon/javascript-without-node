@@ -14,8 +14,8 @@ Jakub Marchwicki <http://github.com/kubamarchwicki[@kubem]>
 :revealjs_history: true
 :revealjs_controls: false
 :revealjs_customtheme: css/poang.css
-:revealjs_width: 1280
-:revealjs_height: 720
+:revealjs_width: 1366
+:revealjs_height: 768
 :source-highlighter: coderay
 :snippets: ../snippets
 
@@ -26,11 +26,11 @@ This is a bit JavaScript 101
 [.small]#You've been warned#
 
 [NOTE.speaker]
---
+====
 * This is JS 101
 * If you've done anythign with JS - a SPA - you probably know more than I do
 ** You can leave - I'm fine
---
+====
 
 include::js_brief_history.adoc[]
 
@@ -52,9 +52,27 @@ image::atwood-law.jpg[width=100%]
 * Modern framework bullsh*t bingo game
 * Fighting language inconsistencies
 
-[#aboutme, data-background-image=images/chlopaki.jpg, data-background-size=cover]
+[#aboutme]
 == Who am I?
-image::chlopaki.jpg[height=580]
+
+image::geecon-reactive.png[role="right"]
+image::aboutme-qrcode.png[width=250, role="right"]
+
+====
+Jakub Marchwicki +
+{zwsp} {zwsp}  Twitter: *@kubem* +
+{zwsp} {zwsp}  Email: jakub@marchwicki.pl
+
+Coder, trainer, speaker +
+{zwsp} {zwsp}  *http://jakub.marchwicki.pl* +
+{zwsp} {zwsp}  Yes, we can work together! +
+
+GeeCON Reactive +
+{zwsp} {zwsp}  9th September 2016 in Sopot +
+
+GeeCON by the beach
+====
+
 
 == TODOMVC Examples
 
@@ -68,9 +86,9 @@ include::js_vanilla.adoc[]
 image::js-alternatives-wordcloud.png[height=550]
 
 [NOTE.speaker]
---
+====
 GWT, CoffeeScript, Dart, ES5, ES6
---
+====
 
 == Not only DOM functions
 
@@ -96,9 +114,9 @@ a| MVC (MVVM)::
 == The Paradox of Choice
 
 [NOTE.speaker]
---
+====
 You make the intelectual exercise of finding the best technology and than... you got *slapped* in the face with the build tool
---
+====
 
 include::js_libraries.adoc[]
 
@@ -125,9 +143,10 @@ include::js_polyfill.adoc[]
 * Be a *full-stack architect*
 
 [NOTE.speaker]
---
+====
 * We feel so comfortable in out backend comfort zone
---
+====
 
 == Questions?
 
+// TODO: http://www.commitstrip.com/en/2016/05/10/a-moment-of-nostalgia/?

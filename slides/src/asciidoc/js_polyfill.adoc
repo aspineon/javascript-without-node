@@ -18,11 +18,11 @@ Shims:: performs interception of an API call and provides a layer of abstraction
 Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.
 
 [NOTE.speaker]
---
+====
 * For the basics - we still write JavaScript (more modern) and get JavaScript (less modern) - backwards compatible
 * That wasn't out case for the strong to weak typing journey
 * And the output is not as beautiful as in typescript
---
+====
 
 === ScalaJS
 
